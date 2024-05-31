@@ -1,0 +1,149 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kartu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.kartu {
+  position: relative;
+  width: 400px;
+  min-height: 450px;
+  background-color: #314193;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  opacity: 1;
+  margin-top: 450px;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column; 
+}
+
+.kartu:hover{
+  opacity: 1;
+}
+.konten-kartu:hover {
+  opacity: 1; 
+}
+
+.kartu:hover .foto-kartu {
+  opacity: 1;
+}
+
+.konten-kartu {
+  position: relative;
+  z-index: 1;
+  opacity: 0.7; 
+}
+
+.kartu h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.foto-kartu {
+  position: absolute;
+  bottom: 0;
+  right: -60px;
+  top: -300px;
+  width: 500px;
+  height: auto;
+  z-index: -1;
+  opacity: 0.7; 
+  transition: opacity 0.5s ease-in-out;
+}
+
+.foto-kartu[alt="Nicholas Andre Natalino"] {
+  right: -2px; 
+  top: -460px;  
+  width: 400px;
+}
+
+.foto-kartu[alt="Leonard Augusto Bantoro"] {
+  right: 70px;
+  top: -330px;  
+  width: 250px;
+}
+
+.foto-kartu[alt="Ryan Erlanda Steffen"] {
+  right: 0px; 
+  top: -330px; 
+  width: 400px;
+}
+
+.qr-kode {
+  margin-top: auto;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.qr-kode[alt="Rafael Nicholas Po QR Code"] {
+  margin-top: 35px;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.qr-kode[alt="Leonard Augusto Bantoro QR Code"] {
+  margin-top: 8px;
+  width: 250px;
+  height: 250px;
+}
+
+.qr-kode[alt="Ryan Erlanda Steffen QR Code"] {
+  margin-top: 35px;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+/* aboutus.css */
+
+.animated-title {
+  font-size: 2em;
+  text-align: center;
+  margin: 20px 0;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.animated-title.hidden {
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 1s ease-out;
+}

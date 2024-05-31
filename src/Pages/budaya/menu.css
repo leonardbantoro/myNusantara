@@ -1,0 +1,48 @@
+
+.header {
+  position: relative;
+  width: 300px; 
+  border: 0px solid #ccc; 
+  border-radius: 1%; 
+  overflow: hidden; 
+  box-shadow: 10px 10px 8px rgba(0, 0, 0.5, 0.5); 
+}
+
+.nama {
+  position: absolute;
+  bottom: 10px; 
+  left: 10px; 
+  color: white;
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  font-size: 1.2em; 
+}
+
+.header:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+.previous-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.previous-button:hover {
+  background-color: #0056b3;
+}
